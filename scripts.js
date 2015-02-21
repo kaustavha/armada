@@ -13,5 +13,8 @@ function AppViewModel() {
     };
 }
 
-// Activates knockout.js
-ko.applyBindings(new AppViewModel());
+$(document).ready(function() {
+    $.material.init();
+    // Activates knockout.js
+    ko.applyBindings(new AppViewModel());
+});
