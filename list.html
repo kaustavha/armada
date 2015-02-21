@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Armada - crossplatform app store</title>
+    <meta content="">
+    <link href='vendor/normalize.css' rel='stylesheet'>
+    <link href='vendor/ripples.min.css' rel='stylesheet'>
+    <link href='vendor/material-wfont.min.css' rel='stylesheet'>
+    <link href='vendor/bootstrap.min.css' rel='stylesheet'>
+    <link href='style.css' rel='stylesheet'>
+    <style></style>
+  </head>
+  <body>
+      <h1>All Applications</h1> 
+      <table>
+        <thead><tr>
+        <th>Application Name</th><th>Description</th>
+        </tr></thead>
+        <tbody data-bind="foreach: applications">
+            <tr>
+                <td data-bind="text: name"></td>
+                <td data-bind="text: description"></td>
+            </tr>
+        </tbody>  
+      </table>   
+    <script type='text/javascript' src='vendor/jquery.min.js'></script>
+    <script type='text/javascript' src='vendor/bootstrap.min.js'></script>
+    <script type='text/javascript' src='vendor/knockout.js'></script>
+    <script type="text/javascript" src='viewmodels.js'></script>
+    <script type='text/javascript' src='vendor/ripple.min.js'></script>
+    <script type='text/javascript' src='vendor/material.min.js'></script>
+  </body>
+</html>
