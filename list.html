@@ -8,23 +8,19 @@
     <link href='style.css' rel='stylesheet'>
   </head>
   <body>
-      <h1>All Applications</h1> 
-      <table>
-        <thead><tr>
-        <th>Application Name</th><th>Description</th>
-        </tr></thead>
-        <tbody data-bind="foreach: applications">
-            <tr>
-                <td data-bind="text: name"></td>
-                <td data-bind="text: description"></td>
-            </tr>
-        </tbody>
-      </table>
+      <h1>All Applications</h1>
+        <span data-bind="foreach: applications" class='app-holder'>
+        <div class='shadow-z-2 app-list-item'>
+          <div data-bind="text: name"></div>
+          <div data-bind="text: description"></div>
+        </div>
+        </span>
     <script type='text/javascript' src='vendor/jquery.min.js'></script>
     <script type='text/javascript' src='vendor/bootstrap.min.js'></script>
     <script type='text/javascript' src='vendor/knockout.js'></script>
-    <script type="text/javascript" src='viewmodels.js'></script>
-    <script type='text/javascript' src='vendor/ripple.min.js'></script>
+    <script type='text/javascript' src='vendor/ripples.min.js'></script>
     <script type='text/javascript' src='vendor/material.min.js'></script>
+    <script type="text/javascript" src='scripts.js'></script>
+    <script type="text/javascript" src='viewmodels.js'></script>
   </body>
 </html>
