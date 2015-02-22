@@ -1,3 +1,10 @@
+.red{color: #f26c51;}
+.dred {color: #db4326;}
+.blue {color: #26bed2;}
+.dblue{color: #1b98a6}
+.yellow {color: #fec953;}
+.orange{color: #f58837}
+
 #input h2 {
   padding: 14px;
   font-size: 16px;
@@ -33,19 +40,15 @@ form-control {
 .appIcon{
   float:left;
 }
-img{
-width: 75px;
-height: 75px;
+.logo{
+width: 150px;
+height: 150px;
 }
 h1{
   font-size: 425%;
 }
 .title {
   display: inline-flex;
-}
-.title img {
-  width: 175px;
-  height: 125px;
 }
 .title h1 {
   font-size: 400%;
