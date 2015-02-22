@@ -11,33 +11,16 @@
     <div class='container-fluid'>
         <div class='row'>
             <div class='col-md-6 col-md-offset-2'>
-              <h1>Welcome to the Armada cross platform application store</h1>
-              <p>Armada is an attempt to fix the fragmented application distribution landscape</p>
-              <br />
-              <p>Right now you have platform specific app stores, i.e one for windows, seperate one for android, tertiary one for macs</p>
-              <p> This made a lot of sense when we built platform specific apps. We had micrsoft office for windows and open office for linux. </p>
-              <p> But the app landscape has changed. It's more product focused and less platform focused. You build the best app for x for all platforms. For example, Evernote or Dropbox. Apps that have to run everywhere.</p>
-              <br />
-              <p>Developer tooling has also come a long way and is making great strides towards cross platform sdks e.g cordova, xamarin, node-webkit, atom-shell etc.</p>
-              <p>So why force developers to deal with the fragmented application marketplace? It's a breeze to generate a binary for each platform using cloud services but an expensive hassle pushing them to their designated app stores.</p>
-              <br />
-              <p>We present a solution:
-                <br />
-                Lets push our applications to a single cross platform app store instead. </p>
-              <p>
-                One app store to rule them all.
-              </p>
-                <br />
-              <p> Welcome to Armada</p>
-              <a class='btn btn-primary' href='list.html'>
-              Proceed to the app store
-              </a>
+                <div data-bind="page: {id: 'marketing', source: 'marketing.html'"></div>
+                <div data-bind="page: {id: 'list', source: 'list.html'"></div>
+                <div data-bind="page: {id: 'app', source: 'app.html'"></div>
             </div>
         </div>
     </div>
     <script type='text/javascript' src='vendor/jquery.min.js'></script>
     <script type='text/javascript' src='vendor/bootstrap.min.js'></script>
     <script type='text/javascript' src='vendor/knockout.js'></script>
+    <script type='text/javascript' src='vendor/pager.min.js'></script>
     <script type='text/javascript' src='vendor/ripples.min.js'></script>
     <script type='text/javascript' src='vendor/material.min.js'></script>
     <script type="text/javascript" src='scripts.js'></script>

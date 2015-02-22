@@ -1,20 +1,23 @@
-// This is a simple *viewmodel* - JavaScript that defines the data and behavior of your UI
-function AppViewModel() {
-    this.firstName = ko.observable("Bert");
-    this.lastName = ko.observable("Bertington");
+function ListViewModel() {
+    var self = this;
 
-    this.fullName = ko.computed(function() {
-        return this.firstName() + " " + this.lastName();
-    }, this);
-
-    this.capitalizeLastName = function() {
-        var currentVal = this.lastName();        // Read the current value
-        this.lastName(currentVal.toUpperCase()); // Write back a modified value
-    };
+    self.applications = [
+    { name: "Twitter", description: "Tweet me!" },
+    { name: "Facebook", description: "The book of faces" },
+    { name: "Snapchat", description: "For funny pics and... stuff" }
+    ];
 }
-
+function Application(name, description) {
+    var self = this;
+    self.name = name;
+    this.description = description;
+}
 $(document).ready(function() {
+    var vm = new ListViewModel();
     $.material.init();
+    pager.extendWithPage(vm);
     // Activates knockout.js
-    ko.applyBindings(new AppViewModel());
+    ko.applyBindings(vm);
+    pager.start();
+    pager.navigate('#/marketing');
 });
