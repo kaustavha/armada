@@ -1,4 +1,4 @@
-[logo](http://i.imgur.com/05wxzoH.png)
+![logo](http://i.imgur.com/05wxzoH.png)
 # Armada
 ## Cross platform, application marketplace
 
