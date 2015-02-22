@@ -52,6 +52,7 @@ h1{
   display: inline-flex;
 }
 .title h1 {
+  width: 220px;
   font-size: 400%;
   margin-top: 50px;
 }
