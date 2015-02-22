@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Armada - crossplatform app store</title>
+	    <link href='vendor/normalize.css' rel='stylesheet'>
+		<link href='vendor/ripples.min.css' rel='stylesheet'>
+	 	<link href='vendor/material-wfont.min.css' rel='stylesheet'>
+	 	<link href='vendor/bootstrap.min.css' rel='stylesheet'>
+		<link href='style.css' rel='stylesheet'>
+	</head>
+	<body>
+		<div class='container-fluid'>
+        	<div class='row'>
+            	<div class='col-md-6 col-md-offset-2'>
+					<span class='title'>
+					<a href='list.html'>
+					<button class='btn btn-warning backBtn'>
+						<i class='mdi-navigation-arrow-back'></i>
+					</button>
+					</a>
+						<img class='logo'src="armada_logo.png" alt=""/>
+						<h1 class="appHeader">Armada</h1>
+						<button class="btn btn-primary dlbtn"><i class="mdi-file-file-download"></i></button>
+					</span>
+					<div class="rating">
+						<span>&#x2606;</span><span>&#x2606;</span><span>&#x2606;</span><span>&#x2606;</span><span>&#x2606;</span>
+					</div>
+					<div class="appDescription"><br />
+						<p>Aramada is a...</p>
+					</div>
+					<button class="btn btn-primary" data-toggle="modal" data-target="#review">Review</button>
+					<div id='review' class='modal fade' tabindex='-1'>
+					<div class='modal-dialog'>
+					<div class='modal-content'>
+					<div class='modal-body'>
+					<form action="">
+						<div id="textareaDiv">
+							<textarea class="form-control" placeholder="Leave a review"></textarea>
+							<button class='btn btn-primary' data-dismiss='modal'>Submit my comment</button>
+						</div>
+					</form>
+					</div>
+					</div>
+					</div>
+					</div>
+					<div class="progress">
+				    <div class="progress-bar progress-bar-warning seperator"></div>
+					</div>
+					<div>
+						<h2>App Reviews</h2><br />
+							<ul class="list-unstyled">
+								<li><p class="review"><strong>Austin Phillips: </strong></p>On my 10th day of livedrive. So far have stored all of my work items on there as well as a few personal videos all of which were movie length lol. With 2 terabytes of space I should be good for a while... Cheers!</li>
+								<li><p class="review"><strong>Jake Comeau: </strong></p>If you use Dropbox to share files with others, it just got a little easier. The Dropbox web site has a new share button you can use to invite others to sync and edit files, or to just send along a link. The ability to share isn't new, but this makes it a little simpler.</li>
+								<li><p class="review"><strong>Genevieve Guimond: </strong></p>Dropbox is amazing, my friend and I basically worked on a web application project whenever one had the time for it and just shared all of the files using Dropbox, never had a problem with it. 10/10</li>
+							</ul>
+				</div>
+			</div>
+		</div>
+		    <script type='text/javascript' src='vendor/jquery.min.js'></script>
+    <script type='text/javascript' src='vendor/bootstrap.min.js'></script>
+    <script type='text/javascript' src='vendor/knockout.js'></script>
+    <script type='text/javascript' src='vendor/ripples.min.js'></script>
+    <script type='text/javascript' src='vendor/material.min.js'></script>
+    <script type="text/javascript" src='scripts.js'></script>
+	</body>
+</html>
