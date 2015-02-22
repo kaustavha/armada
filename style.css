@@ -30,6 +30,13 @@ form-control {
 #textareaDiv {
   width: 75%;
 }
-.appNameDisplay{
-
+.appIcon{
+  float:left;
+}
+img{
+width: 75px;
+height: 75px;
+}
+h1{
+  font-size: 425%;
 }
