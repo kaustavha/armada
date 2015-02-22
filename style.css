@@ -40,3 +40,13 @@ height: 75px;
 h1{
   font-size: 425%;
 }
+.title {
+  display: inline-flex;
+}
+.title img {
+  width: 150px;
+  height: 100px;
+}
+.title h1 {
+  font-size: 400%;
+}

@@ -8,12 +8,17 @@
     <link href='style.css' rel='stylesheet'>
   </head>
   <body>
-      <h1>All Applications</h1>
-        <span data-bind="foreach: applications" class='app-holder'>
-        <div class='shadow-z-2 app-list-item'>
-          <div data-bind="text: name"></div>
-          <div data-bind="text: description"></div>
-        </div>
+      <h1>Applications</h1>
+        <span class='app-holder'>
+          <a class='shadow-z-2 app-list-item btn btn-warning'>
+            <p>Armada</p>
+          </a>
+          <a class='shadow-z-2 app-list-item btn btn-warning'>
+            <p>Popcorn <br />Time</p>
+          </a>
+          <a class='shadow-z-2 app-list-item btn btn-warning'>
+            <p>Dropbox</p>
+          </a>
         </span>
     <script type='text/javascript' src='vendor/jquery.min.js'></script>
     <script type='text/javascript' src='vendor/bootstrap.min.js'></script>
@@ -21,6 +26,5 @@
     <script type='text/javascript' src='vendor/ripples.min.js'></script>
     <script type='text/javascript' src='vendor/material.min.js'></script>
     <script type="text/javascript" src='scripts.js'></script>
-    <script type="text/javascript" src='viewmodels.js'></script>
   </body>
 </html>
