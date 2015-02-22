@@ -11,71 +11,44 @@
 		<div class='container-fluid'>
         	<div class='row'>
             	<div class='col-md-6 col-md-offset-2'>
-	  				<script type='text/javascript' src='vendor/jquery.min.js'></script>
-					<script type='text/javascript' src='vendor/bootstrap.min.js'></script>
-					<script type='text/javascript' src='vendor/knockout.js'></script>
-					<script type="text/javascript" src='scripts.js'></script>
-					<script type='text/javascript' src='vendor/ripple.min.js'></script>
-					<script type='text/javascript' src='vendor/material..min.js'></script>
-					<div class="appNameDisplay">
-						<span>
-							<div class="appIcon">
-						<img src="http://i.imgur.com/05wxzoH.png" alt=""/><!--this is where we can arrange for the app icon to be-->
-					</div>
-					<h1 class="appHeader">aop</h1>
-					</div>
+					<span class='title'>
+						<img src="http://i.imgur.com/05wxzoH.png" alt=""/>
+						<h1 class="appHeader">aop</h1>
+						<button class="btn btn-primary dlbtn">Download</button>
 					</span>
-					<div class="appDescription"><br />
-						<p>Description: </p>
-					</div>
-					<div class="dlButton">
-						<button class="btn btn-primary" href="">Download this app</button>
-					</div><br />
-						<br />
-						<!--<p>Top Contributors: </p>
-						<ul>make an array using knockout that when you input a new contributor, it adds said contributor to the array and the list displays the entire array
-							<li>contributor1</li>
-							<li>contributor2</li>
-							<li>contributor3</li>
-							<li>contributor4</li>
-							<li>contributor5</li>
-						</ul>
-						-->
-					<p>Rate this app:</p>
 					<div class="rating">
 						<span>&#x2606;</span><span>&#x2606;</span><span>&#x2606;</span><span>&#x2606;</span><span>&#x2606;</span>
 					</div>
-					<!--<span><div class="starRating">
-  						<div>
-  						  <div>
-     						 <div>
-     						   <div>
-      							    <input id="rating1" type="radio" name="rating" value="1">
-       							    <label for="rating1"><span>1&#x2606;</span></label>
-       						   </div>
-        							<input id="rating2" type="radio" name="rating" value="2">
-        							<label for="rating2"><span>2&#x2606;</span></label>
-      						 </div>
-      								<input id="rating3" type="radio" name="rating" value="3">
-     								<label for="rating3"><span>3&#x2606;</span></label>
-    					  </div>
-    								<input id="rating4" type="radio" name="rating" value="4">
-    								<label for="rating4"><span>4&#x2606;</span></label>
-  						</div>
-  									<input id="rating5" type="radio" name="rating" value="5">
-  									<label for="rating5"><span>5&#x2606;</span></label>
-					</div></span>-->
-					<button class='btn btn-primary' href=''>Submit my rating</button>
+					<div class="appDescription"><br />
+						<p>Description: </p>
+					</div>
 					<br />
+					<button class="btn btn-primary" data-toggle="modal" data-target="#review">Review</button>
+					<div id='review' class='modal fade' tabindex='-1'>
+					<div class='modal-dialog'>
+					<div class='modal-content'>
+					<div class='modal-body'>
 					<form action="">
 						<div id="textareaDiv">
-							<label>Write your own comment:</label>
-							<textarea class="form-control" placeholder="textarea label"></textarea>
-							<button class='btn btn-primary' href=''>Submit my comment</button>
+							<textarea class="form-control" placeholder="Leave a review"></textarea>
+							<button class='btn btn-primary' data-dismiss='modal'>Submit my comment</button>
 						</div>
 					</form>
+					</div>
+					</div>
+					</div>
+					</div>
+					<div class="progress">
+				    <div class="progress-bar progress-bar-warning seperator"></div>
+					</div>
 				</div>
 			</div>
 		</div>
+		    <script type='text/javascript' src='vendor/jquery.min.js'></script>
+    <script type='text/javascript' src='vendor/bootstrap.min.js'></script>
+    <script type='text/javascript' src='vendor/knockout.js'></script>
+    <script type='text/javascript' src='vendor/ripples.min.js'></script>
+    <script type='text/javascript' src='vendor/material.min.js'></script>
+    <script type="text/javascript" src='scripts.js'></script>
 	</body>
 </html>

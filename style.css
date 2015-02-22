@@ -51,8 +51,8 @@ h1{
   font-size: 400%;
 }
 .rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
+  margin-left: 30px;
+  font-size: 150%;
 }
 .rating > span {
   display: inline-block;
@@ -63,4 +63,12 @@ h1{
 .rating > span:hover ~ span:before {
    content: "\2605";
    position: absolute;
+}
+.dlbtn {
+  margin-left: 15px;
+}
+.seperator {
+  width: 100%;
+  height: 10%;
+  margin-top: 10px;
 }
