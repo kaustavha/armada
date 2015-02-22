@@ -1,0 +1,100 @@
+.red{color: #f26c51;}
+.dred {color: #db4326;}
+.blue {color: #26bed2;}
+.dblue{color: #1b98a6}
+.yellow {color: #fec953;}
+.orange{color: #f58837}
+
+#input h2 {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 400;
+}
+#input .inputs {
+  width: 80%;
+}
+#input .form-control-wrapper {
+  margin: 30px 0;
+}
+.app-holder {
+  display: inline-flex;
+}
+.app-list-item {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 15px;
+}
+textarea {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 25%;
+}
+form-control {
+  margin: 30px 0;
+}
+#textareaDiv {
+  width: 75%;
+}
+.appIcon{
+  float:left;
+}
+.logo{
+width: 150px;
+height: 150px;
+margin-top: 25px;
+}
+h1{
+  font-size: 425%;
+}
+.title {
+  display: inline-flex;
+}
+.title h1 {
+  width: 220px;
+  font-size: 400%;
+  margin-top: 50px;
+}
+.title a{
+  text-decoration: none;
+  color: black;
+}
+.rating {
+  margin-left: 60px;
+  font-size: 150%;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+.dlbtn {
+  margin-left: 15px;
+  width: 100px;
+}
+.dlbtn i {
+  font-size: 250%;
+}
+.backBtn {
+  height: 180px;
+}
+.seperator {
+  width: 100%;
+  height: 10%;
+  margin-top: 10px;
+}
+.review{
+   font-weight: 400;
+}
+.uL{
+  line-style-type: none;
+}
+hr{
+  size: 16px;
+}
