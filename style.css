@@ -43,6 +43,7 @@ form-control {
 .logo{
 width: 150px;
 height: 150px;
+margin-top: 25px;
 }
 h1{
   font-size: 425%;
@@ -52,6 +53,7 @@ h1{
 }
 .title h1 {
   font-size: 400%;
+  margin-top: 50px;
 }
 .title a{
   text-decoration: none;
