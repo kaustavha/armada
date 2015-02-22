@@ -66,6 +66,10 @@ h1{
 }
 .dlbtn {
   margin-left: 15px;
+  width: 100px;
+}
+.dlbtn i {
+  font-size: 250%;
 }
 .seperator {
   width: 100%;
