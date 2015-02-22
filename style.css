@@ -50,6 +50,10 @@ h1{
 .title h1 {
   font-size: 400%;
 }
+.title a{
+  text-decoration: none;
+  color: black;
+}
 .rating {
   margin-left: 30px;
   font-size: 150%;
