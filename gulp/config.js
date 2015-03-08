@@ -21,14 +21,6 @@ module.exports = {
     ],
     dest: dest
   },
-  stylus: {
-    src: src + '/stylus/main.styl',
-    watch: [
-      src + '/stylus/**',
-      mui + '/stylus/**'
-    ],
-    dest: dest
-  },
   markup: {
     src: src + "/www/**",
     dest: dest
