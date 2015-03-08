@@ -34,12 +34,14 @@ var Main = React.createClass({
 
     return (
       <div className="example-page">
+	
+	
 		
 <Toolbar >
   <ToolbarGroup key={0} float="left">
     <DropDownMenu menuItems={filterOptions} />
 	<FlatButton label="All Apps" primary={true} />
-	<FlatButton label="My Apps" secondary={true}  onActionTouchTap={this._handleAction}/>
+	<FlatButton label="My Apps" secondary={true}  />
 	<FlatButton label="Favorites" primary={true}   />
 	<FlatButton label="Share" secondary={true} />
   </ToolbarGroup>
@@ -49,20 +51,24 @@ var Main = React.createClass({
     <FontIcon className="mui-icon-sort" />
     <DropDownIcon iconClassName="icon-navigation-expand-more" menuItems={iconMenuItems} />
     <span className="mui-toolbar-separator">&nbsp;</span>
-    <RaisedButton label="Upload" primary={true} />
+    <RaisedButton label="Developer" primary={true} onClick={this._onDevClick} />
   </ToolbarGroup>
 </Toolbar>
        
 		
         <Nav/>
+		<h3 id="DevName" >Developer Name: Nikhil</h3>
+		<FlatButton label="Apps Developed" primary={true}   />
+		
       </div>
     );
   },
 
-  _handleAction: function() {
-    //We can add more code to this function, but for now we'll just include an alert.
-    alert("We removed the event from your calendar.");
+  _onDevClick: function() {
+    
+    
   }
+ 
 });
 
 module.exports = Main;
