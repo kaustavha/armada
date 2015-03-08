@@ -13,11 +13,10 @@ module.exports = {
       dest + '/**'
     ]
   },
-  less: {
-    src: src + '/less/main.less',
+  styles: {
+    src: src + '/styles/main.styl',
     watch: [
-      src + '/less/**',
-      mui + '/less/**'
+      src + '/styles/**',
     ],
     dest: dest
   },
