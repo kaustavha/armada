@@ -1,12 +1,14 @@
-var React = require('react');
+var React = require('react'),
+    mui = require('material-ui'),
+    RaisedButton = mui.RaisedButton;
 var Nav = React.createClass({
   render: function() {
     return (
-      <ul>
-        <li><a href="#/author">#/author</a></li>
-        <li><a href="#/books">#/books</a></li>
-        <li><a href="#/books/view/1">#/books/view/1</a></li>
-      </ul>
+      <div className="nav-button-container">
+        <RaisedButton linkButton={true} href="#/store" secondary={true} label='App Store' />
+        <RaisedButton linkButton={true} href="#/myapps" secondary={true} label='My Apps' />
+        <RaisedButton linkButton={true} href="#/developer" secondary={true} label='Developer Tools' />
+      </div>
     )
   }
 });
