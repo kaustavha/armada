@@ -1,6 +1,21 @@
 var React = require('react'),
     mui = require('material-ui'),
-    RaisedButton = mui.RaisedButton;
+    RaisedButton = mui.RaisedButton,
+    author = function () { console.log("author"); },
+    books = function () { console.log("books"); },
+    viewBook = function (bookId) {
+      console.log("viewBook: bookId is populated: " + bookId);
+    };
+  var routes = {
+    '/store': author,
+    '/myapps': [books, function() {
+      console.log("An inline route handler.");
+    }],
+    '/developer': viewBook
+  };
+  var router = Router(routes);
+  router.init();
+
 var Nav = React.createClass({
   render: function() {
     return (
